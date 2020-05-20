@@ -245,7 +245,7 @@
     <section class="content" >
       <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box" style="position: relative;">
                 <!-- /.box-header -->
                 <div class="box-body">
                   <table id="example1" class="table table-bordered table-hover">
@@ -260,6 +260,12 @@
                       <th>Status</th>
                       <th>Jenis Pemeriksaan</th>
                       <th>Dokter Rujukan</th>
+                      <th>Asal Ruangan</th>
+                      <th>GITO</th>
+                      <th>Jadwal</th>
+                      <th>Jenis Asuransi</th>
+                      <th>Tarif</th>
+                      <th>Aksi</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -275,6 +281,27 @@
                         <td>C</td>
                         <td>C</td>
                         <td>C</td>
+                        <td>Internet
+                          Explorer 5.0
+                        </td>
+                        <td>Win 95+</td>
+                        <td>5</td>
+                        <td>C</td>
+                        <td>C</td>
+                        <td>
+                          <div class="input-group margin">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="fa fa-gears"></span>
+                              <span class="fa fa-caret-down"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Kirim</a></li>
+                                <li><a href="#">Detail</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td>Trident</td>
@@ -288,85 +315,27 @@
                         <td>A</td>
                         <td>A</td>
                         <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
                         <td>Internet
-                            Explorer 6
+                          Explorer 5.0
                         </td>
-                        <td>Win 98+</td>
-                        <td>6</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 7</td>
-                        <td>Win XP SP2+</td>
-                        <td>7</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>AOL browser (AOL desktop)</td>
-                        <td>Win XP</td>
-                        <td>6</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 1.0</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.7</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 1.5</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 2.0</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 3.0</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>1.9</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
-                        <td>A</td>
+                        <td>Win 95+</td>
+                        <td>5</td>
+                        <td>C</td>
+                        <td>C</td>
+                        <td>
+                          <div class="input-group margin">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="fa fa-gears"></span>
+                              <span class="fa fa-caret-down"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Kirim</a></li>
+                                <li><a href="#">Detail</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                     <tfoot>
@@ -380,256 +349,21 @@
                           <th>Status</th>
                           <th>Jenis Pemeriksaan</th>
                           <th>Dokter Rujukan</th>
+                          <th>Asal Ruangan</th>
+                          <th>GITO</th>
+                          <th>Jadwal</th>
+                          <th>Jenis Asuransi</th>
+                          <th>Tarif</th>
+                          <th>Aksi</th>
                         </tr>
                     </tfoot>
                   </table>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="box">
-              <!-- /.box-header -->
-              <div class="box-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>Dokter Rujukan</th>
-                    <th>Asal Ruangan</th>
-                    <th>GITO</th>
-                    <th>Jadwal</th>
-                    <th>Jenis Asuransi</th>
-                    <th>Tarif</th>
-                    <th>Aksi</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 5.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                      <td>C</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span class="fa fa-gears"></span>
-                            <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 5.5
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 6
-                      </td>
-                      <td>Win 98+</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet Explorer 7</td>
-                      <td>Win XP SP2+</td>
-                      <td>7</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>AOL browser (AOL desktop)</td>
-                      <td>Win XP</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>
-                        <div class="input-group margin">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                              <span class="fa fa-gears"></span>
-                              <span class="fa fa-caret-down"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Kirim</a></li>
-                              <li><a href="#">Detail</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                      <tr>
-                        <th>Dokter Rujukan</th>
-                        <th>Asal Ruangan</th>
-                        <th>GITO</th>
-                        <th>Jadwal</th>
-                        <th>Jenis Asuransi</th>
-                        <th>Tarif</th>
-                        <th>Aksi</th>
-                      </tr>
-                  </tfoot>
-                </table>
-              </div>
-          </div>
-        </div>
-        <section class="content-header" style="margin-top: 50px;margin-bottom: 20px;">
-          <h1>
-            Data Pasien Lama Belum Diperiksa
-          </h1>
-        </section>
-        <div class="col-xs-12">
-          <div class="box">
+
+          <h3 style="margin-top: 20px;margin-bottom: 20px;"> Data Pasien Lama Belum Diperiksa </h3>
+        
+          <div class="box" style="position: relative;">
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example3" class="table table-bordered table-hover">
@@ -864,14 +598,13 @@
                 </table>
               </div>
           </div>
-        </div>
-        <section class="content-header" style="margin-top: 50px;margin-bottom: 20px;">
-          <h1>
-            Data Pasien Umum Belum Diperiksa
-          </h1>
-        </section>
-        <div class="col-xs-12">
-          <div class="box">
+
+          <h3 style="margin-top: 20px;margin-bottom: 20px;"> Data Pasien Umum </h3>
+          <div class="btn-group" style="position: absolute; right: 10px; top: 1300px">
+              <button class="btn btn-default" style="background-color: #3c8dbc; color: white" id="button-one">Belum Diperiksa</button>
+              <button class="btn btn-default" id="button-two">Telah Diperiksa</button>
+          </div>
+          <div class="box" id="tabelpasienumum1" style="position: relative;">
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example5" class="table table-bordered table-hover">
@@ -883,110 +616,6 @@
                     <th>Umur</th>
                     <th>L/P</th>
                     <th>Jenis Pemeriksaan</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 5.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 5.5
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                          Explorer 6
-                      </td>
-                      <td>Win 98+</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet Explorer 7</td>
-                      <td>Win XP SP2+</td>
-                      <td>7</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>AOL browser (AOL desktop)</td>
-                      <td>Win XP</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                      <td>A</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                      <tr>
-                        <th>Dokter Rujukan</th>
-                        <th>Asal Ruangan</th>
-                        <th>GITO</th>
-                        <th>Jadwal</th>
-                        <th>Jenis Asuransi</th>
-                        <th>Tarif</th>
-                        <th>Aksi</th>
-                      </tr>
-                  </tfoot>
-                </table>
-              </div>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="box">
-              <!-- /.box-header -->
-              <div class="box-body">
-                <table id="example4" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
                     <th>Jadwal</th>
                     <th>Jenis Asuransi</th>
                     <th>Tarif</th>
@@ -1000,6 +629,14 @@
                           Explorer 5.0
                       </td>
                       <td>Win 95+</td>
+                      <td>5</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1019,6 +656,14 @@
                       <td>Trident</td>
                       <td>Internet
                           Explorer 5.5
+                      </td>
+                      <td>Win 95+</td>
+                      <td>5.5</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
                       </td>
                       <td>Win 95+</td>
                       <td>
@@ -1042,6 +687,14 @@
                           Explorer 6
                       </td>
                       <td>Win 98+</td>
+                      <td>6</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1061,6 +714,14 @@
                       <td>Trident</td>
                       <td>Internet Explorer 7</td>
                       <td>Win XP SP2+</td>
+                      <td>7</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1080,6 +741,14 @@
                       <td>Trident</td>
                       <td>AOL browser (AOL desktop)</td>
                       <td>Win XP</td>
+                      <td>6</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1099,6 +768,14 @@
                       <td>Gecko</td>
                       <td>Firefox 1.0</td>
                       <td>Win 98+ / OSX.2+</td>
+                      <td>1.7</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1118,6 +795,14 @@
                       <td>Gecko</td>
                       <td>Firefox 1.5</td>
                       <td>Win 98+ / OSX.2+</td>
+                      <td>1.8</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1137,6 +822,14 @@
                       <td>Gecko</td>
                       <td>Firefox 2.0</td>
                       <td>Win 98+ / OSX.2+</td>
+                      <td>1.8</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1156,6 +849,14 @@
                       <td>Gecko</td>
                       <td>Firefox 3.0</td>
                       <td>Win 2k+ / OSX.3+</td>
+                      <td>1.9</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>Trident</td>
+                      <td>Internet
+                          Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
                       <td>
                         <div class="input-group margin">
                           <div class="input-group-btn">
@@ -1174,6 +875,12 @@
                   </tbody>
                   <tfoot>
                       <tr>
+                        <th>No.Pendaftaran</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Umur</th>
+                        <th>L/P</th>
+                        <th>Jenis Pemeriksaan</th>
                         <th>Jadwal</th>
                         <th>Jenis Asuransi</th>
                         <th>Tarif</th>
@@ -1183,14 +890,8 @@
                 </table>
               </div>
           </div>
-        </div>
-        <section class="content-header" style="margin-top: 50px;margin-bottom: 20px;">
-          <h1>
-            Data Pasien Telah Diperiksa
-          </h1>
-        </section>
-        <div class="col-xs-12">
-          <div class="box">
+
+          <div class="box" id="tabelpasienumum2" style="display: none;" style="position: relative;">
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example6" class="table table-bordered table-hover">
@@ -1330,9 +1031,8 @@
                 </table>
               </div>
           </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="box">
+
+          <div class="box" style="display: none;">
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example7" class="table table-bordered table-hover">
@@ -1800,7 +1500,9 @@
 <!-- page script -->
 <script>
     $(function () {
-      $('#example1').DataTable()
+      $('#example1').DataTable({
+        'scrollX': true
+      })
       $('#example2').DataTable()
       $('#example3').DataTable()
       $('#example4').DataTable()
@@ -1818,6 +1520,24 @@
         'info'        : true,
         'autoWidth'   : false
       })
+    })
+
+    $("#button-one").click(function() {
+      $(this).css("background", "#3c8dbc");
+      $(this).css("color", "white");
+      $("#button-two").css("background", "#ecf0f5")
+      $("#button-two").css("color", "black")
+      $("#tabelpasienumum1").show()
+      $("#tabelpasienumum2").hide()
+      
+    })
+    $("#button-two").click(function() {
+      $(this).css("background", "#3c8dbc");
+      $(this).css("color", "white");
+      $("#button-one").css("background", "#ecf0f5")
+      $("#button-one").css("color", "black")
+      $("#tabelpasienumum2").show()
+      $("#tabelpasienumum1").hide()
     })
   </script>
 </body>
