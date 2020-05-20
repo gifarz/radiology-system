@@ -16,9 +16,13 @@
   <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="style.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -235,7 +239,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" style="margin-top: 50px;">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header" style="position: absolute;">
       <h1>
         Jadwal
       </h1>
@@ -245,7 +249,12 @@
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
-          <div class="box">
+          <div class="btn-group">
+            <button class="btn btn-info" id="button-one">Belum Diperiksa</button>
+            <button class="btn btn-danger" id="button-two">Telah Diperiksa</button>
+          </div>
+          <!-- <input type="checkbox" id="toggle-button" data-toggle="toggle" data-on="Belum Diperiksa" data-off="Telah Diperiksa"> -->
+          <div class="box" id="table-one">
               <!-- /.box-header -->
               <div class="box-body">
                 <table id="example1" class="table table-bordered table-hover">
@@ -255,6 +264,16 @@
                     <th>Dokter</th>
                     <th>Radiografer</th>
                     <th>Resepsionis</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
+                    <th>Kasir</th>
                     <th>Kasir</th>
                   </tr>
                   </thead>
@@ -267,14 +286,30 @@
                       <td>Win 95+</td>
                       <td>5</td>
                       <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
+                      <td>C</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                       <td>Trident</td>
                       <td>Internet
                           Explorer 5.5
                       </td>
                       <td>Win 95+</td>
                       <td>5.5</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                       <td>A</td>
                     </tr>
                     <tr>
@@ -285,12 +320,24 @@
                       <td>Win 98+</td>
                       <td>6</td>
                       <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                     </tr>
                     <tr>
                       <td>Trident</td>
                       <td>Internet Explorer 7</td>
                       <td>Win XP SP2+</td>
                       <td>7</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                       <td>A</td>
                     </tr>
                     <tr>
@@ -299,12 +346,24 @@
                       <td>Win XP</td>
                       <td>6</td>
                       <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                     </tr>
                     <tr>
                       <td>Gecko</td>
                       <td>Firefox 1.0</td>
                       <td>Win 98+ / OSX.2+</td>
                       <td>1.7</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                       <td>A</td>
                     </tr>
                     <tr>
@@ -313,12 +372,24 @@
                       <td>Win 98+ / OSX.2+</td>
                       <td>1.8</td>
                       <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                     </tr>
                     <tr>
                       <td>Gecko</td>
                       <td>Firefox 2.0</td>
                       <td>Win 98+ / OSX.2+</td>
                       <td>1.8</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
                       <td>A</td>
                     </tr>
                     <tr>
@@ -327,7 +398,13 @@
                       <td>Win 2k+ / OSX.3+</td>
                       <td>1.9</td>
                       <td>A</td>
-                    </tr>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                      <td>A</td>
+                    </tr> -->
                   </tbody>
                   <tfoot>
                       <tr>
@@ -336,11 +413,105 @@
                         <th>Radiografer</th>
                         <th>Resepsionis</th>
                         <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
+                        <th>Kasir</th>
                       </tr>
                   </tfoot>
                 </table>
               </div>
           </div>
+          <div class="box" id="table-two" style="display: none;">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Jam</th>
+                  <th>Dokter</th>
+                  <th>Radiografer</th>
+                  <th>Resepsionis</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                  <th>Kasir</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Trident</td>
+                    <td>Internet
+                        Explorer 5.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                  </tr>
+                  <tr>
+                    <td>Trident</td>
+                    <td>Internet
+                        Explorer 5.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                    <td>C</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                      <th>Jam</th>
+                      <th>Dokter</th>
+                      <th>Radiografer</th>
+                      <th>Resepsionis</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                      <th>Kasir</th>
+                    </tr>
+                </tfoot>
+              </table>
+            </div>
         </div>
       </div>
     </section>
@@ -568,10 +739,16 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
 <!-- page script -->
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 <script>
     $(function () {
-      $('#example1').DataTable()
-      $('#example2').DataTable()
+      $('#example1').DataTable({
+        'scrollX': true
+      })
+      $('#example2').DataTable({
+        'scrollX': true
+      })
       $('#example3').DataTable()
       $('#example4').DataTable()
       $('#example5').DataTable()
@@ -589,6 +766,24 @@
         'autoWidth'   : false
       })
     })
+
+    $("#toggle-button").click(function() {
+      if($(this).attr("data-on")){
+        $("#table-one").hide()
+      } else if ($(this).attr("data-off")) {
+        $("table-two").hide()
+      }
+    })
+
+    $("#button-one").click(function() {
+      $("#table-one").show()
+      $("#table-two").hide()
+    })
+    $("#button-two").click(function() {
+      $("#table-two").show()
+      $("#table-one").hide()
+    })
+
   </script>
 </body>
 </html>
