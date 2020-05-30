@@ -5,7 +5,7 @@
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Semua Pasien</a></li>
         <li class="active">Detail Pasien</li>
-      </ol>
+    </ol>
 </section>
 
 <section class="content">
@@ -114,6 +114,7 @@
                         <thead>
                             <tr>
                                 <th>No.Pendaftaran</th>
+                                <th>No.Pemeriksaan</th>
                                 <th>Nama</th>
                                 <th>Alamat</th>
                                 <th>Umur</th>
@@ -125,12 +126,16 @@
                                 <th>CITO</th>
                                 <th>Jadwal</th>
                                 <th>Jenis Asuransi</th>
+                                <th>Surat Rujukan</th>
+                                <th>Hasil Foto</th>
+                                <th>Hasil Periksa</th>
                                 <th>Tarif</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td>Trident</td>
                                 <td>Trident</td>
                                 <td>Win 95+</td>
                                 <td>C</>
@@ -146,6 +151,9 @@
                                 <td>C</td>
                                 <td>C</td>
                                 <td>C</td>
+                                <td>C</td>
+                                <td>C</td>
+                                <td>C</td>
                                 <td>
                                     <div class="input-group margin">
                                         <div class="input-group-btn">
@@ -155,8 +163,10 @@
                                                 <span class="fa fa-caret-down"></span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="fa fa-gears" href="#">Kirim hasil</a></li>
+                                                <li><a class="fa fa-gears" data-toggle="modal"
+                                                        data-target="#kirim-hasil">Kirim hasil</a></li>
                                                 <li><a href="#">Lihat hasil</a></li>
+                                                <li><a href="#">Lihat anamnesa</a></li>
                                                 <li><a href="#">Lihat rujukan</a></li>
                                                 <li><a href="#">Lihat catatan</a></li>
                                             </ul>
@@ -165,6 +175,7 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>Trident</td>
                                 <td>Trident</td>
                                 <td>Win 95+</td>
                                 <td>5.5</td>
@@ -180,6 +191,9 @@
                                 <td>C</td>
                                 <td>C</td>
                                 <td>C</td>
+                                <td>C</td>
+                                <td>C</td>
+                                <td>C</td>
                                 <td>
                                     <div class="input-group margin">
                                         <div class="input-group-btn">
@@ -191,6 +205,7 @@
                                             <ul class="dropdown-menu">
                                                 <li><a class="fa fa-gears" href="#">Kirim hasil</a></li>
                                                 <li><a href="#">Lihat hasil</a></li>
+                                                <li><a href="#">Lihat anamnesa</a></li>
                                                 <li><a href="#">Lihat rujukan</a></li>
                                                 <li><a href="#">Lihat catatan</a></li>
                                             </ul>
@@ -201,7 +216,151 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="modal fade" id="kirim-hasil">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" style="text-align: center">Kirim Hasil</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <strong><i class="fa fa-book margin-r-5"></i> Nomor Rekam Medis :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Nomor Pendaftaran :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Nama :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Umur :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Alamat :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+                                    </div>
+                                    <div class="col-xs--6">
+                                        <strong><i class="fa fa-book margin-r-5"></i> Jenis Kelamin :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Alamat :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Layanan :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Dokter Perujuk :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+
+                                        <strong><i class="fa fa-book margin-r-5"></i> Dokter Rujukan :</strong>
+
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">Silahkan unggah hasil foto</label>
+                                                <input type="file" id="exampleInputFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h4 class="modal-title" style="text-align: center">Catatan Radiologi</h4>
+                                <br>
+                                <div class="row">
+                                    <form action="">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label>Tegangan listrik</label>
+                                                <input type="text" class="form-control" style="width: 80%">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                                <label>Arus Listrik</label>
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                                <label>FFD</label>
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                                <label>BSF</label>
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                                <label>Jumlah Penyinaran</label>
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                                <label>Dosis Penyinaran</label>
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon">.00</span>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Tipe Film</label>
+                                            <select class="form-control select2" style="width: 100%;">
+                                                <option selected="selected">Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                            <label>Catatan Tambahan</label>
+                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left"
+                                        data-dismiss="modal">Kembali</button>
+                                    <button type="button" class="btn btn-primary">Kirim</button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                </div>
             </div>
         </div>
-    </div>
 </section>
